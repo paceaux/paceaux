@@ -31,7 +31,7 @@ Maybe it can help me find some common sound patterns in Romance languages&hellip
 ### Where are you on the interwebz?
 All over. It's probably best if you [just checkout LinkTree](https://linktr.ee/paceaux)
 ### What are your pronouns?
-`\b((h(e|i(s|m(self|\b))))|(el(e|\b))|il(s|\b)|s(on|u|eu)|l(o|e|ui)|o)\b/gi`
+`\b((h(e|i(s|m(self|\b))))|((e|é)l(e|\b))|il(s|\b)|s(on|u|eu)|l(o|e|ui(-même|\b))|o)\b/gi`
 
 ### 📫 How can I send you a very important message?
 I'm super active on [Twitter](https://twitter.com/paceaux)
