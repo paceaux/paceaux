@@ -1,0 +1,31 @@
+{
+  "name": "paceaux",
+  "version": "1.0.0",
+  "description": "static site for paceaux.com",
+  "main": "index.js",
+  "scripts": {
+    "lint:styles": "stylelint src/assets/css/**/*.css",
+    "lint:styles:fix": "stylelint src/assets/css/**/*.css --fix",
+    "package:build": "copyfiles -u 1 \"src/**/*\" \"dist/\" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paceaux/paceaux.git"
+  },
+  "keywords": [
+    "static",
+    "site"
+  ],
+  "author": "Paceaux",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/paceaux/paceaux/issues"
+  },
+  "homepage": "https://github.com/paceaux/paceaux#readme",
+  "devDependencies": {
+    "copyfiles": "^2.4.1",
+    "stylelint": "^15.11.0",
+    "stylelint-config-standard": "^34.0.0",
+    "stylelint-order": "^6.0.3"
+  }
+}

@@ -1,0 +1,135 @@
+ @keyframes fadein {
+     0% {
+         color: rgba(0, 0, 0, 0.01);
+     }
+
+     100% {
+         color: rgba(55, 55, 55, 1);
+     }
+ }
+
+ * {
+    padding: 0;
+    margin: 0;
+ }
+
+ body {
+    display: grid;
+     min-height: 100%;
+     grid-template: ". header ." 20vh ". main ." auto ". footer ." 5vh / minmax(1.618rem, 19.1vw) 61.8vw minmax(1.618rem, 19.1vw);
+ }
+
+ .g-header {
+    grid-area: header;
+     border-bottom: 1px dashed #1E2126;
+ }
+
+.g-header__title {
+     display: inline-block;
+     color: #47443E;
+     text-shadow: 3px 3px 7px #555;
+     font-size: clamp(var(--biggestTitleSize), 7rem, 120px);
+     line-height: 2ex;
+     margin: 0;
+     transform-origin: bottom left;
+     animation-name: fall;
+     animation-duration: 1.3s;
+     animation-timing-function: ease-in;
+     animation-iteration-count: 1;
+     animation-direction: linear;
+ }
+
+.g-header__subtitle {
+     display: inline-block;
+     line-height: 2ex;
+     margin: 0;
+     animation-name: hop;
+     animation-duration: 2s;
+     animation-timing-function: ease-in-out;
+     animation-iteration-count: 1;
+     animation-direction: linear;
+ }
+
+.g-main {
+    grid-area: main;
+}
+
+ .g-footer {
+     grid-area: footer;
+     border-top: 1px solid #d8d8d8
+ }
+
+ section {
+     animation-name: fadein;
+     animation-duration: 2s;
+     animation-timing-function: ease-in-out;
+     animation-iteration-count: 1;
+     animation-direction: linear;
+ }
+
+
+ @keyframes fall {
+     0% {
+         transform: rotate(-90deg)
+     }
+
+     85% {
+         transform: rotate(-0deg);
+     }
+
+     90% {
+         transform: rotate(-5deg);
+     }
+
+     95% {
+         transform: rotate(-0deg);
+     }
+ }
+
+ @keyframes hop {
+     0% {
+         transform: translate(0);
+     }
+
+     61% {
+         transform: translate(0, -00);
+
+     }
+
+     62% {
+         transform: translate(0, -25px) rotate(5deg);
+
+     }
+
+     64% {
+         transform: translate(0, -0) rotate(-3.4deg);
+
+     }
+
+     66% {
+         transform: translate(0, -15px) rotate(2deg);
+
+     }
+
+     68% {
+         transform: translate(0, 0) rotate(-1deg);
+
+     }
+
+     70% {
+         transform: translate(0, -5px);
+
+     }
+
+     71% {
+         transform: translate(0, 0);
+
+     }
+ }
+
+ main {
+     animation-name: fadein;
+     animation-duration: .3s;
+     animation-delay: 1.5s;
+     animation-iteration-count: 1;
+ }
