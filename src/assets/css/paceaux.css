@@ -14,22 +14,31 @@
  }
 
  body {
+    --gridRail: 10%;
+    --sectionFlow: row;
     display: grid;
-     min-height: 100%;
-     grid-template: ". header ." 20vh ". main ." auto ". footer ." 5vh / minmax(1.618rem, 19.1vw) 61.8vw minmax(1.618rem, 19.1vw);
+    grid-template-areas:
+    'railP header railS' 
+    'railP main   railS' 
+    'railP footer railS';
+    grid-template-rows: auto 1fr 10%;
+    grid-template-columns: var(--gridRail) 1fr var(--gridRail);
+    min-height: 100vh;
  }
 
  .g-header {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 3;
     grid-area: header;
-     border-bottom: 1px dashed #1E2126;
  }
 
 .g-header__title {
      display: inline-block;
-     color: #47443E;
-     text-shadow: 3px 3px 7px #555;
      font-size: clamp(var(--biggestTitleSize), 7rem, 120px);
-     line-height: 2ex;
+     line-height: 1;
+     padding: 5px 10px;
+     border: 5px solid;
      margin: 0;
      transform-origin: bottom left;
      animation-name: fall;
@@ -41,7 +50,10 @@
 
 .g-header__subtitle {
      display: inline-block;
-     line-height: 2ex;
+    font-family: var(--titleFontFamily);
+    font-weight: var(--heaviestFontWeight);
+    font-size: var(--bigTitleSize);
+    line-height: var(--smallLineHeight);
      margin: 0;
      animation-name: hop;
      animation-duration: 2s;
@@ -132,4 +144,10 @@
      animation-duration: .3s;
      animation-delay: 1.5s;
      animation-iteration-count: 1;
+ }
+
+ .linkList__title {
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--colorNeutralDarkest);
  }
