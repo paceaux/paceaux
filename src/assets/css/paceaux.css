@@ -75,11 +75,12 @@
  body {
     --gridRail: 10%;
     --sectionFlow: row;
+
     display: grid;
     grid-template-areas:
-        'railP header railS' 
-        'railP main   railS' 
-        'railP footer railS';
+        "railP header railS" 
+        "railP main   railS" 
+        "railP footer railS";
     grid-template-rows: auto 1fr 10%;
     grid-template-columns: var(--gridRail) 1fr var(--gridRail);
     min-height: 100vh;
@@ -146,7 +147,5 @@
  }
 
  .linkList__title {
-    border-bottom-width: 4px;
-    border-bottom-style: solid;
-    border-bottom-color: var(--colorNeutralDarkest);
+    border-bottom: 4px solid var(--colorNeutralDarkest);
  }
