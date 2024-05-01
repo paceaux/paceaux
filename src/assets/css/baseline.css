@@ -15,8 +15,12 @@
      These colors pass WCAG 2.1 for contrast against a light background and the NeutralDarker gray
      Before you change them, check your contrast ratios:  https://webaim.org/resources/linkcontrastchecker/
     */
-    --colorCool: rgb(47, 120, 193);                          /*   #2f78c1; hsl(210, 61%, 47%);  */
-    --colorCoolDarker: rgb(41, 105, 168);                    /*  #2a6bac;  hsl(210, 61%, 41%) */
+    --colorCool: hsl(210deg, 61%, 46%);                      /*   #6ea5dc; hsl(210, 61%, 46%);  */
+    --colorCoolDarker: hsl(210deg, 61%, 36%); 
+    --colorCoolerLight: rgb(93, 124, 217);
+    --colorCooler: rgb(62, 93, 155);
+    --colorCoolerDark: rgb(31, 62, 124);
+    --colorCoolest: rgb(93, 186, 63);
 
 /*===== 
     #Color #Link #Border #Variables
