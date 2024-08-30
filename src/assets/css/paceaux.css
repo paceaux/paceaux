@@ -151,7 +151,7 @@
     animation-duration: 1.5s;
  }
 
-@media screen and (width >= 768px) {
+@media screen and (width >= 980px) {
     .g-main {
         display: flex;
         flex-wrap: wrap;
