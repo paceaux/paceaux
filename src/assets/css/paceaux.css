@@ -143,7 +143,8 @@
  }
 
 
- .linkList__title {
+ .linkList__title,
+ .media__title {
     border-bottom: 4px solid var(--colorNeutralDark);
  }
 
@@ -162,8 +163,16 @@
         flex-basis: 100%;
     }
 
-    .linkList {
+    .linkList,
+    .media {
        flex-basis: 45%;
+    }
+
+    .media {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
    
     .linkList:nth-of-type(3n) {
