@@ -8,53 +8,57 @@
      }
 
      90% {
-         transform: rotate(-5deg);
+         transform: rotate(-11.5deg);
      }
 
      95% {
          transform: rotate(-0deg);
      }
+
+     100% {
+        transform: rotate(0deg);
+     }
  }
 
  @keyframes hop {
      0% {
-         transform: translate(0);
+        transform: translate(0);
+    }
+    
+    17% {
+        /* x translate is 1/3rd of width.  */
+        transform: translate(6ch, -3ch) rotate(11.25deg);
+        transform-origin: bottom right;
      }
 
-     61% {
-         transform: translate(0, -00);
-
+     34% {
+        /* x translate=  2/3rd of amount moved + amount moved: (6 * .67) + 6 */
+        transform: translate(10ch, 0) rotate(0);
+    }
+    
+    51% {
+        /* x translate=  2/3rd of amount moved + amount moved: (4 * 67 ) + 10*/
+        transform: translate(12.68ch, -1.5ch) rotate(-5.625deg);
+        transform-origin: bottom left;
+    }
+    
+    68% {
+        /* x translate=  2/3rd of amount moved + amount moved: (2.68 * .67 ) + 12.68*/
+        transform: translate(14.4756ch, 0) rotate(0)
+        
+    }
+    
+    85% {
+        /* x translate=  2/3rd of amount moved + amount moved: (1.7956 * .67 ) + 14.4756*/
+        transform: translate(15.6786ch, -1.5ch) rotate(-1.25deg);
+        transform-origin: bottom right;
      }
 
-     62% {
-         transform: translate(0, -25px) rotate(5deg);
-
+    100% {
+        /* x translate=  2/3rd of amount moved + amount moved: (1.203 * .67 ) + 15.6786 */
+        transform: translate(16.4846ch, 0) rotate(0)
      }
 
-     64% {
-         transform: translate(0, -0) rotate(-3.4deg);
-
-     }
-
-     66% {
-         transform: translate(0, -15px) rotate(2deg);
-
-     }
-
-     68% {
-         transform: translate(0, 0) rotate(-1deg);
-
-     }
-
-     70% {
-         transform: translate(0, -5px);
-
-     }
-
-     71% {
-         transform: translate(0, 0);
-
-     }
  }
 
 @keyframes fadein {
@@ -114,12 +118,15 @@
     font-weight: var(--heaviestFontWeight);
     font-size: var(--bigTitleSize);
     line-height: var(--smallLineHeight);
-     margin: 0;
-     animation-name: hop, fadein;
-     animation-duration: 2s, 1s;
-     animation-timing-function: ease-in, ease-in;
-     animation-iteration-count: 1, 1;
-     animation-direction: linear;
+    margin: 0;
+    animation-name: hop;
+    animation-duration: .4s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1.1s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+
  }
 
 .g-main {
