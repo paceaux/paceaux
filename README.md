@@ -21,7 +21,8 @@ Red Hat, as a Senior Front-end Drupal Engineer.
 
 ### 🔭 working on
 
-- 🚀 Enhancing the Methodius library for [analysis on bigrams and trigrams to improve language detection](https://experiments.frankmtaylor.com/methodius/).
+- [Analyzing Bluesky posts](https://github.com/paceaux/social-pronouns) that containg "social pronouns" like dude, bro, bruh, chat, sis, and fam
+-  🚀 Enhancing the Methodius library for [analysis on bigrams and trigrams to improve language detection](https://experiments.frankmtaylor.com/methodius/).
 - Developing a [tool to calculate CSS Complexity](https://github.com/paceaux/css-complexity).
 - Coming up with the testing for [CheapState](https://github.com/paceaux/CheapState), a namespaceable localStorage pubsub utility.
 
@@ -34,10 +35,9 @@ Maybe it can help me find some common sound patterns in Germanic (🏴󠁧󠁢�
 
 ### 👯 seeking collaborators for
 
+- Learning the difference between bro and bruh
 - helping [Methodius](https://github.com/paceaux/methodius) get better at identifying n-grams in non-western languages, like Arabic
-
 - helping Methodius do text edit distance analysis
-
 - getting [Isidore](https://github.com/paceaux/isidore) to do a better job at spotting verbs in English.
 
 ## 💬 Answered asks are&hellip;
